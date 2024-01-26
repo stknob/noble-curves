@@ -3,6 +3,7 @@ import { should } from 'micro-should';
 // Should be first to catch obvious things
 import './basic.test.js';
 import './nist.test.js';
+import './brainpool.test.js';
 import './ed448.test.js';
 import './ed448-addons.test.js';
 import './ed25519.test.js';

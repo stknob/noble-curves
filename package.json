@@ -106,6 +106,21 @@
       "import": "./esm/bn254.js",
       "default": "./bn254.js"
     },
+    "./brainpoolP256r1": {
+      "types": "./brainpoolP256r1.d.ts",
+      "import": "./esm/brainpoolP256r1.js",
+      "default": "./brainpoolP256r1.js"
+    },
+    "./brainpoolP384r1": {
+      "types": "./brainpoolP384r1.d.ts",
+      "import": "./esm/brainpoolP384r1.js",
+      "default": "./brainpoolP384r1.js"
+    },
+    "./brainpoolP512r1": {
+      "types": "./brainpoolP512r1.d.ts",
+      "import": "./esm/brainpoolP512r1.js",
+      "default": "./brainpoolP512r1.js"
+    },
     "./ed25519": {
       "types": "./ed25519.d.ts",
       "import": "./esm/ed25519.js",
@@ -164,6 +179,9 @@
     "p521",
     "secp256r1",
     "secp256k1",
+    "brainpoolP256r1",
+    "brainpoolP384r1",
+    "brainpoolP512r1",
     "ed25519",
     "ed448",
     "x25519",

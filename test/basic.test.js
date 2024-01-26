@@ -9,6 +9,9 @@ import { secp256r1 } from '../esm/p256.js';
 import { secp384r1 } from '../esm/p384.js';
 import { secp521r1 } from '../esm/p521.js';
 import { secp256k1 } from '../esm/secp256k1.js';
+import { brainpoolP256r1 } from '../esm/brainpoolP256r1.js';
+import { brainpoolP384r1 } from '../esm/brainpoolP384r1.js';
+import { brainpoolP512r1 } from '../esm/brainpoolP512r1.js';
 import { ed25519, ed25519ctx, ed25519ph, x25519 } from '../esm/ed25519.js';
 import { ed448, ed448ph } from '../esm/ed448.js';
 import { pallas, vesta } from '../esm/pasta.js';
@@ -27,6 +30,9 @@ const FIELDS = {
   secp256r1: { Fp: [secp256r1.CURVE.Fp] },
   secp521r1: { Fp: [secp521r1.CURVE.Fp] },
   secp256k1: { Fp: [secp256k1.CURVE.Fp] },
+  brainpoolP256r1: { Fp: [brainpoolP256r1.CURVE.Fp] },
+  brainpoolP384r1: { Fp: [brainpoolP384r1.CURVE.Fp] },
+  brainpoolP512r1: { Fp: [brainpoolP512r1.CURVE.Fp] },
   jubjub: { Fp: [jubjub.CURVE.Fp] },
   ed25519: { Fp: [ed25519.CURVE.Fp] },
   ed448: { Fp: [ed448.CURVE.Fp] },
@@ -314,6 +320,7 @@ for (const c in FIELDS) {
 const CURVES = {
   secp192r1, secp224r1, secp256r1, secp384r1, secp521r1,
   secp256k1,
+  brainpoolP256r1, brainpoolP384r1, brainpoolP512r1,
   ed25519, ed25519ctx, ed25519ph,
   ed448, ed448ph,
   pallas, vesta,
